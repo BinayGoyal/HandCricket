@@ -11,19 +11,10 @@ int main()
     	
 		int comp_score = 0, player_score = 0;
 		char player_name[20];
-		// char comp_option1[12] = "Stone";
-		// char comp_option2[12] = "Paper";
-		// char comp_option3[12] = "Scissor";
 		char option;
 		int player_num, comp_num;
-	//	printf("Hi! Binay\n Please write an integer value :");
-	//	scanf("%d",&x);
-	//	printf("%d\n",x);
 		printf("Please provide player name here: ");
 		scanf("%[^\n]", player_name);  // input intake of %s terminates as it finds a white space that's why I have done this
-		// printf("Hi! %s \n Please write any one of these :: 's' for 'stone' , 'p' for 'paper' or 'c' for 'scissor' : ", player_name);
-		//printf("Hi! Akshu \n Please write any one of these :: 's' for 'stone' , 'p' for 'paper' or 'c' for 'scissor' : ");
-		// scanf("%c", &y);
 		printf("\n Hello %s! To bat type 'B' or to bowl type 'W': ", player_name);  //we can also use switch cases
 		scanf("%s", &option); //why %s here, %c isn't working and also option = getchar() isn't working
 		if (option == 'B' || option == 'b')                 
